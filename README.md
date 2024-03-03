@@ -4,7 +4,6 @@ This is a solution to the React.js II Step task
 
 ## Table of contents
 
-- [Frontend Mentor - Clock app solution](#frontend-mentor---clock-app-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
