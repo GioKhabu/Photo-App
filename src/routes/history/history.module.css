@@ -2,13 +2,11 @@
     width: 98vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     position: relative;
     overflow-x: hidden;
-    gap: 30px;
 
 }
 
@@ -46,11 +44,16 @@
 }
 
 .loading {
+    margin: 0;
     font-size: 20px;
     font-weight: 500;
     margin: 0;
     margin-top: 10px;
     padding: 0;
+    letter-spacing: 2px;
+    color: rgb(88, 87, 87);
+    width: 80%;
+    text-align: center;
 }
 
 .searchTitle {

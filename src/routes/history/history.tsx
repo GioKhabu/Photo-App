@@ -106,8 +106,8 @@ const HistoryPage: React.FC<HistoryPageProps> = ({ searchWords }) => {
             setModalTitle={setModalTitle}
           />
         ))}
-        {isLoading && <p className={classes.loading}>Loading ...</p>}
       </section>
+      {isLoading && <p className={classes.loading}>Loading ...</p>}
       {photoID && (
         <PhotoModal
           setPhotoID={setPhotoID}

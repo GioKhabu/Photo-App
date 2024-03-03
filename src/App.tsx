@@ -4,8 +4,9 @@ import HomePage from "./routes/home/home";
 import Header from "./components/header/header";
 import HistoryPage from "./routes/history/history";
 import SearchInput from "./components/search-input/searchinput";
+import { FC } from 'react';
 
-function App() {
+const App: FC = () => {
   const [searchWords, setSearchWords] = useState<string[]>([]);
   const [searchMode, setSearchMode] = useState<boolean>(false);
 

@@ -22,7 +22,7 @@ const PhotoModal: React.FC<PhotoModalProps> = ({
 }) => {
   const endpoint = `https://api.unsplash.com/photos/${photoID}/statistics?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`;
 
-  const { data: fetchedData, error: dataError, isLoading } = useSWR(endpoint, fetcher);
+  const { data: fetchedData, error: dataError } = useSWR(endpoint, fetcher);
 
   useEffect(() => {
     if (dataError) {
@@ -43,7 +43,6 @@ const PhotoModal: React.FC<PhotoModalProps> = ({
         <div className={classes.photoContainer}>
           <img className={classes.photo} src={modalUrl} alt={modalTitle} />
         </div>
-        {isLoading && <p className={classes.loading}>Loading ...</p>}
         <div className={classes.dataWrapper}>
           <h2>
             Likes: <span>{fetchedData?.likes.total}</span>

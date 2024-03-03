@@ -20,6 +20,8 @@
     position: fixed;
     background-color: white;
     border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
 }
 
 .photoContainer {
@@ -39,7 +41,7 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -51,9 +53,24 @@
 }
 
 .loading {
+    display: inline-block;
+    margin: 0;
     font-size: 20px;
     font-weight: 500;
     margin: 0;
     margin-top: 10px;
     padding: 0;
+}
+@media (max-width: 600px) {
+    .modalWrapper {
+        height: auto;
+        width: 80%;
+
+    }
+    .dataWrapper {
+        gap: 20px;
+    }
+    .dataWrapper h2 {
+        font-size: 18px;
+    }
 }

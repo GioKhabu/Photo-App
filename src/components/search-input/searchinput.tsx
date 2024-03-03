@@ -33,6 +33,7 @@ export default function SearchInput({
         value={searchWord}
         placeholder="Search images here"
         onChange={handleChange}
+        required
       />
     </form>
   );
